@@ -1,25 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import './index.css' 
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import { Container } from 'react-bootstrap' 
+import MayNav from './components/navbar/MayNav'
+import Landing from './components/landing/landing'
+import About from './components/about/About'
+import Contact from './components/contact/contact'
+import Portfolio from './components/Portfolio/Portfolio'
 
-function App() {
+const App = () => {
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <>
+    <Container>
+    <BrowserRouter>
+      <MayNav/>
+    <Routes>
+      <Route path='/' element={<Landing/>}/> 
+      <Route path='/about' element={<About/>}/> 
+      <Route path='/portfolio' element={<Portfolio/>}/> 
+      <Route path='/contact' element={<Contact/>}/> 
+    </Routes>
+    </BrowserRouter>
+    </Container>
+    </>
+
+  )
 }
 
-export default App;
+export default App

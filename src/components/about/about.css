@@ -1,0 +1,96 @@
+.about{ 
+margin-bottom: 50px ; 
+}
+.about .box .tec{
+   background-color: rgb(61 57 57 / 23%);
+   border-radius:15px;
+   padding: 20px;
+   color: white;
+   margin: 50px 0;
+}
+.about .box .tecn1 div{
+   background-color: rgb(61 57 57 / 23%);
+   border-radius:15px;
+   padding: 20px;
+   color: white;
+   margin: 50px 0;
+}
+.font-three{
+   color: white;
+   position: relative; 
+   text-transform: uppercase;
+   display: inline-block;
+   }
+   
+   .font-three::after{
+      content: '';
+      position: absolute;
+      background-color: darkorange;
+      width: 80px;
+      height: 4px;
+      left: 1px;
+      bottom: -8px;
+   }
+.about .box p{
+   letter-spacing: 1.5px;
+   line-height: 30px;
+   
+}
+.about hr{
+   color:darkorange;
+   border-width: 2px;
+}
+
+@media (max-width:991px) {
+   .about .knowladge{
+      display: block !important;
+   }
+}
+
+ .skills-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-top: 40PX;
+}
+@media (max-width:576px) {
+   .skills-list {
+padding: 0;
+    }
+    .about{
+      margin-top: 35px;
+    }
+}
+.skills-item {
+  width: 8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  word-break: break-all;
+}
+
+.skills-item i {
+  font-size: 3rem;
+  color: #feb824;
+}
+.bx {
+  font-family: boxicons!important;
+  font-weight: 400;
+  font-style: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-rendering: auto;
+  display: inline-block;
+  text-transform: none;
+  speak: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.skills-item img {
+  width: 3rem;
+  height: 2.5rem;
+}

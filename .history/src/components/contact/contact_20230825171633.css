@@ -1,0 +1,23 @@
+.contact{
+   margin: 100px 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-label {
+   margin-bottom: .5rem;
+   color: darkorange;
+   font-weight: bold;
+}
+form{
+   width: 50%;
+}
+form .heghit{
+   padding: 10px 0 70px 10px;
+}
+.button{
+   background-color: darkorange !important;
+   border-color: darkorange !important;
+}

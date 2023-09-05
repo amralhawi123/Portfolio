@@ -1,0 +1,61 @@
+.contact{
+   margin: 100px 0; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.font-three{
+   color: white;
+   position: relative; 
+   text-transform: uppercase;
+   display: inline-block;
+   }
+   
+   .font-three::after{
+      content: '';
+      position: absolute;
+      background-color: darkorange;
+      width: 80px;
+      height: 4px;
+      left: 1px;
+      bottom: -8px;
+   }
+form{
+   width: 80%;
+}
+form input{
+   height: 60px; 
+   border: 2px solid hsl(0, 0%, 22%);
+   background: none !important;
+   color: white !important;
+   transition: .3s;
+}
+form input::placeholder{
+   color: white !important;
+}
+form input:focus{
+   border-color: darkorange !important;
+   box-shadow: 0 0 0 0.25rem rgb(241 205 75 / 20%) !important;
+}
+.one {
+   display: flex !important;
+   align-items: center !important;
+   gap: 40px;
+}
+@media (max-width:576px) {
+   .one {
+      gap: 20px;
+    flex-direction: column;
+   }
+   .contact .massege{
+      margin-top: 10px !important;
+   }
+}
+form .heghit{
+   padding: 20px 0 70px 10px;
+}
+.button{
+   background-color: darkorange !important;
+   border-color: darkorange !important;
+}

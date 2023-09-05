@@ -1,0 +1,36 @@
+.font-three{
+   color: white;
+   position: relative; 
+   text-transform: uppercase;
+   display: inline-block;
+   }
+   
+   .font-three::after{
+      content: '';
+      position: absolute;
+      background-color: darkorange;
+      width: 80px;
+      height: 4px;
+      left: 1px;
+      bottom: -8px;
+   }
+.portfolio a{
+   text-decoration: none;
+   color:darkorange
+}
+
+.portfolio .box .card {
+   overflow: hidden;
+}
+ 
+.portfolio .box .card:hover .card-img-top { 
+   transform: rotate(-1deg) scale(1.1);
+}
+.portfolio .box .card .card-img-top {
+   transition: 1.5s; 
+}
+@media (max-width:576px) {
+   .portfolio{
+      margin-top: 35px;
+   }
+}
