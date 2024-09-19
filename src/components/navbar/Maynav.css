@@ -1,14 +1,12 @@
 .myNav .navbar-brand{
-   font-weight: bold ;
-   font-family: auto;
-   color:darkorange;
+   color:darkorange
 }
 
-.navbar-toggler{
+.myNav-toggler{
    background-color: white !important;
 }
 @media (max-width:576px) {
-   .navbar-toggler{
+   .myNav-toggler{
       display: none !important;
    }
    .collapse:not(.show) {
@@ -16,45 +14,74 @@
   }
 }
 .myNav .links a {
+   display: block;
+   height: 100%;
+   font-size: 16px;
+   position: relative;
    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 60px;
-    padding: 0 20px;
-    position: relative;
-    transition: .2s;
-    overflow: hidden;
-    text-decoration: auto;
-    color: white;
-    font-weight: 700;
+   align-items: center;
+   justify-content: center;
+   color: #fff; 
+   font-weight: 600;
+   text-shadow: 0 0 15px #8e54e9;
+   transition: all 300ms cubic-bezier(0.075, 0.82, 0.165, 1);
+   text-align: center;
+   padding: 10px 12px; 
+   text-decoration: none;
+   margin: 15px;
 }
-.myNav .links a::before{
-   content: '';
-   position: absolute;
-   width: 100%;
-   height: 3px;
-   background-color: darkorange;
-   top: 0;
-   left: -100%;
-   transition: .2s;
+
+.myNav .links a:after,
+.myNav .links a:before {
+  content: "";
+  position: absolute;
+  display: block;
+  border: 0px solid transparent;
 }
+
+.myNav .links a:after {
+  width: 0%;
+  height: 80%;
+  border-top: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+  transition: all 0.3s ease;
+}
+
+.myNav .links a:before {
+  width: 120%;
+  height: 0%;
+  border-left: 2px solid #fff;
+  border-right: 2px solid #fff;
+  transition: all 0.5s ease;
+}
+
 .myNav .links a:hover::before {
-   left: 0;
+  height: 80%;
 }
+
+.myNav .links a:hover::after{
+  width: 120%;
+}
+
+.myNav .links a.active{
+   color: darkorange;
+}
+
+
 @media (max-width:576px) {
-   .navbar-toggler{
+   .myNav-toggler{
       display: none !important;
    }
    .collapse:not(.show) {
       display: block !important;
   }
-  .navbar-nav { 
+  .myNav-nav { 
     flex-direction: row !important;
   }
   .myNav .links a{
    padding: 0 15px;
   }
-  .navbar{
+  .myNav{
    display: block !important;
    text-align: center;
   }

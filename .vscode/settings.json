@@ -1,0 +1,11 @@
+{
+    "editor.fontSize": 15,
+    "files.autoSave": "onWindowChange",
+    "editor.tabSize": 5,
+    "editor.autoClosingBrackets": "always",
+    "editor.formatOnSave": true,
+    "terminal.explorerKind": "integrated",
+    "terminal.integrated.accessibleViewFocusOnCommandExecution": true,
+    "terminal.integrated.defaultProfile.windows": "Windows PowerShell",
+    "terminal.integrated.fontSize": 12,
+}

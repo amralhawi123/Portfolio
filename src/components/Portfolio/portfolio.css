@@ -21,6 +21,7 @@
 
 .portfolio .box .card {
    overflow: hidden;
+   box-shadow: rgba(212, 222, 10, 0.2) 0px 2px 8px 5px !important;
 }
  
 .portfolio .box .card:hover .card-img-top { 
