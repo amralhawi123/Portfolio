@@ -28,6 +28,11 @@ const MayNav = () => {
               PORTFOLIO
             </Link>
             <Link
+              to="/channel"
+              className={location.pathname === "/channel" ? "active" : ""}>
+              CHANNEL
+            </Link>
+            <Link
               to="/contact"
               className={location.pathname === "/contact" ? "active" : ""}>
               CONTACT

@@ -9,6 +9,7 @@ import About from "./components/about/About";
 import Contact from "./components/contact/contact";
 import Portfolio from "./components/Portfolio/Portfolio";
 import LoadingComponent from "./components/utility/LoadingComponent";
+import Channel from "./components/Channel/Channel";
 
 const App = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -37,6 +38,7 @@ const App = () => {
             <Route path="/" element={<Landing />} />
             <Route path="/about" element={<About />} />
             <Route path="/portfolio" element={<Portfolio />} />
+            <Route path="/channel" element={<Channel />} />
             <Route path="/contact" element={<Contact />} />
           </Routes>
         </BrowserRouter>
