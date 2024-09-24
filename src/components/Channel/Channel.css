@@ -3,5 +3,10 @@ height: max-content;
 }
 .contnet{
      width: 70%;
-     margin: auto;
+     margin: 100px auto;
+}
+@media (max-width:578px) {
+     .contnet{
+          width: 85%; 
+     }
 }

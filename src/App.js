@@ -10,9 +10,12 @@ import Contact from "./components/contact/contact";
 import Portfolio from "./components/Portfolio/Portfolio";
 import LoadingComponent from "./components/utility/LoadingComponent";
 import Channel from "./components/Channel/Channel";
+import NavMobile from "./components/navbar/NavMobile";
+import { useMediaQuery } from "react-responsive";
 
 const App = () => {
   const [isLoading, setIsLoading] = useState(true);
+  const isMobile = useMediaQuery({ query: "(max-width: 768px)" });
 
   useEffect(() => {
     // بعد 3 ثواني هيخفي الكمبوننت
@@ -33,7 +36,8 @@ const App = () => {
 
       <Container>
         <BrowserRouter>
-          <MayNav />
+          {isMobile ? <NavMobile /> : <MayNav />}
+
           <Routes>
             <Route path="/" element={<Landing />} />
             <Route path="/about" element={<About />} />

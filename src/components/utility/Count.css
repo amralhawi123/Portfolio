@@ -17,7 +17,11 @@
      margin: auto;
      transform: translate(-50%, -50%);
 }
-
+@media (max-width:576px) {
+  .container-count {
+    left: 20%;
+}
+}
 .text {
   color: #fff;
   font-size: 6rem;

@@ -1,0 +1,51 @@
+.nav-mobile button {
+     padding: 0px 15px;
+     font-size: 28px !important;
+     color: #fff;
+     border: none;
+     background-color: darkorange;
+     cursor: pointer;
+     border-radius: 8px !important;
+     position: relative;
+   }
+   
+   .nav-mobile   ul {
+     padding: 15px 30px;
+     position: absolute;
+     background-color:black;
+     border-radius: 8px;
+     align-items: center;
+     display: none;
+     top: 73px;
+     right: 30px;
+     z-index: 100;
+     a{
+          text-decoration: none;
+          color: white;
+          font-weight: 600;
+     }
+   }
+
+   .nav-mobile  a.active{
+     color: darkorange;
+  }
+
+  .nav-mobile ul   li {
+     list-style: none;
+     margin: 0;
+     padding: 10px 0;
+     font-family: sofia-pro, sans-serif;
+     font-weight: 400;
+     font-style: normal;
+     font-size: 17px;
+     color: #fff;
+   }
+.nav-mobile{
+     display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 15px;
+    h3{
+     color: darkorange;
+    }
+}
