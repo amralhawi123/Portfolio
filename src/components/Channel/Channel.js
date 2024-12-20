@@ -24,6 +24,24 @@ const Channel = () => {
           </Accordion.Item>
         </Accordion>
       </div>
+      <div className="mt-5 contnet">
+        <Accordion defaultActiveKey="0">
+          <Accordion.Item eventKey="0">
+            <Accordion.Header>
+              Problems Solving With JavaScript Level One | شرح بالعربي _
+              elhawiCode
+            </Accordion.Header>
+            <Accordion.Body>
+              <ReactPlayer
+                url="<https://youtu.be/jpjHmzMQXv4?si=fEwC3DI1pi3E6oOr>"
+                controls
+                width="100%"
+                height="400px"
+              />
+            </Accordion.Body>
+          </Accordion.Item>
+        </Accordion>
+      </div>
     </div>
   );
 };
